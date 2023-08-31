@@ -1,0 +1,163 @@
+html {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: blue;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+.add-book-form {
+  display: grid;
+  grid-template-columns:
+    max(310px, 10%) max(260px, 10%) max(110px, 10%) max(210px, 10%)
+    max(130px, 10%);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: max(300px, 90%);
+}
+
+#author {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: max(250px, 90%);
+}
+
+#pages {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: max(100px, 90%);
+}
+
+.is-read {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: max(200px, 90%);
+}
+
+.newBook {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgb(250, 203, 116);
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  font-weight: 700;
+}
+
+.library {
+  margin: 50px;
+}
+
+.headers {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns:
+    max(300px, 45%) max(200px, 25%) max(150px, 10%) max(150px, 10%)
+    max(130px, 10%);
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.author {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.pages {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.read-unread {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.remove {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.container {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-auto-rows: 50px;
+}
+
+.container div {
+  display: grid;
+  grid-template-columns:
+    max(300px, 45%) max(200px, 25%) max(150px, 10%) max(150px, 10%)
+    max(130px, 10%);
+  grid-template-rows: 20px 20px;
+  align-items: center;
+}
+
+.paraT {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.paraA {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.paraP {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.read {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.del {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+}
