@@ -21,20 +21,17 @@ formField.addEventListener("submit", (e) => {
 });
 
 // Creates an Object for the book with stored data
-function Book(
-  title = `Unknown`,
-  author = `Unknown`,
-  pages = `Unknown`,
-  isRead = false
-) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.isRead = isRead;
-  this.info = function () {
+class Book {
+  constructor(title, author, pages, isRead) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = isRead;
+  }
+  bookInfo() {
     let info = `${title} by ${author}, ${pages} pages, ${isRead}`;
     return info;
-  };
+  }
 }
 
 // Adds book to Library
